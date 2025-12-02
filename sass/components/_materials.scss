@@ -1,0 +1,38 @@
+@use '../abstracts/variables' as *;
+
+// Materials List Styling
+#material-list {
+  list-style: none;
+  padding: 0;
+  margin: $spacing-lg 0;
+
+  li {
+    background: #f9f9f9;
+    border-left: 4px solid $primary-color;
+    margin-bottom: $spacing-md;
+    padding: $spacing-md;
+    border-radius: 4px;
+    transition: all $transition-speed ease;
+
+    &:hover {
+      background: #fff;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      transform: translateX(8px);
+    }
+  }
+}
+
+.material-heading {
+  color: #111;
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin: 0 0 $spacing-xs 0;
+}
+
+.material-description {
+  color: #666;
+  font-size: $spacing-sm;
+  font-weight: 300;
+  line-height: 1.6;
+  margin: 0;
+}

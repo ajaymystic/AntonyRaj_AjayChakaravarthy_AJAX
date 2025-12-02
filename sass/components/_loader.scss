@@ -1,0 +1,43 @@
+@use '../abstracts/variables' as *;
+
+.loader-container {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: $spacing-xl 0;
+  text-align: center;
+}
+
+.spinner-icon {
+  width: 150px;
+  height: 75px;
+  margin: 0 auto;
+}
+
+.loader-text {
+  margin-top: $spacing-md;
+  font-size: $spacing-sm;
+  color: $primary-color;
+  font-weight: 400;
+}
+
+.error-container {
+  display: none;
+  background-color: $error-bg;
+  border: 2px solid $error-border;
+  border-radius: 8px;
+  padding: $spacing-md;
+  margin: $spacing-lg 0;
+  color: $error-text;
+  text-align: center;
+  font-size: $spacing-sm;
+  font-weight: 500;
+}
+
+@media screen and (max-width: $mobile) {
+  .spinner-icon {
+    width: 120px;
+    height: 60px;
+  }
+}
